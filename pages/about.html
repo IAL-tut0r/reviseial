@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — ReviseIAL</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script>
+    (function(){ const t=localStorage.getItem('rial-theme')||'dark'; document.documentElement.setAttribute('data-theme',t); })();
+  </script>
+  <style>
+    .about-hero {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--chem-accent), var(--phys-accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f1117;
+      flex-shrink: 0;
+    }
+    .about-hero-text h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .about-hero-text p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      max-width: 500px;
+    }
+    .role-pill {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 12px;
+      border-radius: 100px;
+      background: var(--chem-dim);
+      color: var(--chem-accent);
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.3px;
+    }
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-bottom: 20px;
+    }
+    .about-card h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .about-card h2 .card-icon { font-size: 1.1rem; }
+    .about-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 0.8rem;
+    }
+    .about-card p:last-child { margin-bottom: 0; }
+    .about-card p strong { color: var(--text-primary); font-weight: 500; }
+    .social-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .social-btn:hover { background: var(--bg-hover); }
+    .social-btn.email { border-color: var(--chem-accent); color: var(--chem-accent); }
+    .social-btn.email:hover { background: var(--chem-dim); }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 2.5rem 0;
+    }
+    @media (max-width: 600px) {
+      .about-hero { flex-direction: column; gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">Revise<span class="dot-chem">I</span><span class="dot-phys">AL</span></a>
+  <div class="nav-right">
+    <a class="nav-link" href="../pages/chemistry/ias.html">Chemistry</a>
+    <a class="nav-link" href="../pages/physics/ias.html">Physics</a>
+    <a class="nav-link active" href="about.html">About</a>
+    <a class="nav-link" href="../index.html#feedback">Feedback</a>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">☀️</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <span>About</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="about-hero">
+    <div class="avatar">A</div>
+    <div class="about-hero-text">
+      <div class="role-pill">A-Level Student · Aspiring Engineer</div>
+      <h1>Hi, I'm Abdur.</h1>
+      <p>I built ReviseIAL to help fellow A-Level students get better at exam technique — one topic at a time.</p>
+    </div>
+  </div>
+
+  <!-- Why I built it -->
+  <div class="about-card">
+    <h2><span class="card-icon">💡</span> Why I built ReviseIAL</h2>
+    <p>
+      As an <strong>Edexcel International A-Level student</strong>, I found it frustrating that past paper questions were scattered across dozens of papers with no easy way to practise a specific topic. If you're weak on Kinetics or Waves, you'd have to dig through years of papers just to find relevant questions.
+    </p>
+    <p>
+      ReviseIAL fixes that. Every question is <strong>organised by topic</strong>, tagged by difficulty, and comes with a worked solution so you don't just get the answer — you understand the method.
+    </p>
+    <p>
+      ✏️ <em>Feel free to personalise this section with your own words when you're ready!</em>
+    </p>
+  </div>
+
+  <!-- Mission -->
+  <div class="about-card">
+    <h2><span class="card-icon">🎯</span> What ReviseIAL aims to be</h2>
+    <p>A <strong>free, no-login, no-nonsense</strong> revision tool for Edexcel IAL Chemistry and Physics students worldwide. No ads, no paywalls — just good questions and clear solutions.</p>
+    <p>Currently covering <strong>IAS (Year 1)</strong> for both subjects, with IAL2 (Year 2) coming soon.</p>
+  </div>
+
+  <!-- Subjects covered -->
+  <div class="about-card">
+    <h2><span class="card-icon">📚</span> What's covered</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:0.5rem;">
+      <div>
+        <div style="font-size:13px; font-weight:500; color:var(--chem-accent); margin-bottom:0.6rem;">⚗️ Chemistry IAS</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:5px;">
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">1. Stoichiometry</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">2. Atomic Structure</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">3. Bonding</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">4. Intro to Organic Chemistry</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">5. Alkenes</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">6. Energetics</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">7. Intermolecular Forces</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">8. Redox</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">9. Kinetics</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">10. Further Organic Chemistry</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:13px; font-weight:500; color:var(--phys-accent); margin-bottom:0.6rem;">⚛️ Physics IAS</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:5px;">
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">1. Motion</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">2. Forces</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">3. Fluids</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">4. Materials</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">5. Waves</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">6. Quantum Physics</li>
+          <li style="font-size:13px; color:var(--text-secondary); font-weight:300;">7. Electric Circuits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="about-card">
+    <h2><span class="card-icon">✉️</span> Get in touch</h2>
+    <p>Found an error? Have a suggestion? Want to contribute questions or solutions? Reach out — I'd love to hear from you.</p>
+    <div class="social-grid">
+      <a class="social-btn email" href="mailto:your@email.com">✉️ Email me</a>
+      <a class="social-btn" href="https://github.com/IAL-tut0r" target="_blank">🐙 GitHub</a>
+      <a class="social-btn" href="https://instagram.com/yourhandle" target="_blank">📸 Instagram</a>
+      <a class="social-btn" href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+    </div>
+    <p style="margin-top:1rem; font-size:12px; color:var(--text-muted);">✏️ Replace the links above with your actual email and social profiles.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Feedback -->
+  <div id="feedback" class="feedback-section">
+    <h3>Send feedback</h3>
+    <p>Have thoughts on the site? Let me know!</p>
+    <div class="star-row">
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button>
+    </div>
+    <form class="feedback-form" id="feedback-form">
+      <select class="feedback-select" id="fb-subject">
+        <option value="chemistry">Chemistry</option>
+        <option value="physics">Physics</option>
+        <option value="general" selected>General / Site</option>
+      </select>
+      <textarea class="feedback-textarea" id="fb-message" placeholder="Your message..."></textarea>
+      <button type="submit" class="feedback-submit">Send feedback</button>
+    </form>
+    <div class="feedback-thanks" id="feedback-thanks">Thanks! Your feedback has been received. 🙏</div>
+  </div>
+
+</div>
+
+<footer>
+  <span>ReviseIAL &mdash; Free Edexcel IAL revision resources</span> &nbsp;·&nbsp;
+  <a href="#feedback">Feedback</a> &nbsp;·&nbsp;
+  <a href="about.html">About</a>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
