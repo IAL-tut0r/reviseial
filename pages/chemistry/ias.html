@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chemistry IAS — ReviseIAL</title>
+  <link rel="stylesheet" href="../../css/style.css"/>
+  <script>
+    (function(){ const t=localStorage.getItem('rial-theme')||'dark'; document.documentElement.setAttribute('data-theme',t); })();
+  </script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../../index.html">Revise<span class="dot-chem">I</span><span class="dot-phys">AL</span></a>
+  <div class="nav-right">
+    <a class="nav-link active" href="ias.html">Chemistry</a>
+    <a class="nav-link" href="../physics/ias.html">Physics</a>
+    <a class="nav-link" href="../../index.html#feedback">Feedback</a>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">☀️</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">Home</a>
+    <span>›</span>
+    <span>Chemistry</span>
+  </div>
+
+  <div class="hero" style="padding-top:1.5rem;">
+    <div class="hero-eyebrow">Edexcel IAL Chemistry</div>
+    <h1 style="color:var(--chem-accent)">Chemistry</h1>
+    <p class="hero-sub">Select a year group, then choose a topic to start practising.</p>
+  </div>
+
+  <!-- Year tabs -->
+  <div class="unit-tabs">
+    <button class="unit-tab active-chem" onclick="showUnit('ias', this)">IAS (Year 1)</button>
+    <button class="unit-tab locked" title="Coming soon" onclick="return false;">IAL2 (Year 2) — Coming Soon 🔒</button>
+  </div>
+
+  <!-- IAS Topics -->
+  <div id="unit-ias">
+    <div class="section-header">
+      <h2>IAS Topics</h2>
+      <span>10 topics</span>
+    </div>
+
+    <div class="topics-grid">
+      <a class="topic-card chem-topic" href="topics/stoichiometry.html">
+        <div class="topic-left">
+          <span class="topic-num">1</span>
+          <span class="topic-name">Stoichiometry</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/atomic-structure.html">
+        <div class="topic-left">
+          <span class="topic-num">2</span>
+          <span class="topic-name">Atomic Structure</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/bonding.html">
+        <div class="topic-left">
+          <span class="topic-num">3</span>
+          <span class="topic-name">Bonding</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/intro-organic.html">
+        <div class="topic-left">
+          <span class="topic-num">4</span>
+          <span class="topic-name">Introduction to Organic Chemistry</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/alkenes.html">
+        <div class="topic-left">
+          <span class="topic-num">5</span>
+          <span class="topic-name">Alkenes</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/energetics.html">
+        <div class="topic-left">
+          <span class="topic-num">6</span>
+          <span class="topic-name">Energetics</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/intermolecular-forces.html">
+        <div class="topic-left">
+          <span class="topic-num">7</span>
+          <span class="topic-name">Intermolecular Forces</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/redox.html">
+        <div class="topic-left">
+          <span class="topic-num">8</span>
+          <span class="topic-name">Redox</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/kinetics.html">
+        <div class="topic-left">
+          <span class="topic-num">9</span>
+          <span class="topic-name">Kinetics</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card chem-topic" href="topics/further-organic.html">
+        <div class="topic-left">
+          <span class="topic-num">10</span>
+          <span class="topic-name">Further IAS Organic Chemistry</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- IAL2 coming soon -->
+  <div id="unit-ial2" style="display:none;">
+    <div class="coming-soon-banner">
+      <h3>IAL2 (Year 2) — Coming Soon</h3>
+      <p>Year 2 topics are being prepared. Check back soon!</p>
+    </div>
+  </div>
+
+  <!-- Feedback -->
+  <div id="feedback" class="feedback-section">
+    <h3>Send feedback</h3>
+    <p>Found an error in a question or solution? Let us know.</p>
+    <div class="star-row">
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button>
+    </div>
+    <form class="feedback-form" id="feedback-form">
+      <select class="feedback-select" id="fb-subject">
+        <option value="chemistry" selected>Chemistry</option>
+        <option value="physics">Physics</option>
+        <option value="general">General / Site</option>
+      </select>
+      <textarea class="feedback-textarea" id="fb-message" placeholder="Your message..."></textarea>
+      <button type="submit" class="feedback-submit">Send feedback</button>
+    </form>
+    <div class="feedback-thanks" id="feedback-thanks">Thanks! Your feedback has been received. 🙏</div>
+  </div>
+
+</div>
+
+<footer>
+  <span>ReviseIAL &mdash; Free Edexcel IAL revision resources</span> &nbsp;·&nbsp;
+  <a href="../../index.html#feedback">Feedback</a>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script>
+function showUnit(id, btn) {
+  document.querySelectorAll('.unit-tab').forEach(t => t.classList.remove('active-chem'));
+  btn.classList.add('active-chem');
+  document.getElementById('unit-ias').style.display = id === 'ias' ? '' : 'none';
+  document.getElementById('unit-ial2').style.display = id === 'ial2' ? '' : 'none';
+}
+</script>
+</body>
+</html>

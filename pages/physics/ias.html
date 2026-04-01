@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Physics IAS — ReviseIAL</title>
+  <link rel="stylesheet" href="../../css/style.css"/>
+  <script>
+    (function(){ const t=localStorage.getItem('rial-theme')||'dark'; document.documentElement.setAttribute('data-theme',t); })();
+  </script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../../index.html">Revise<span class="dot-chem">I</span><span class="dot-phys">AL</span></a>
+  <div class="nav-right">
+    <a class="nav-link" href="../chemistry/ias.html">Chemistry</a>
+    <a class="nav-link active" href="ias.html">Physics</a>
+    <a class="nav-link" href="../../index.html#feedback">Feedback</a>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">☀️</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">Home</a>
+    <span>›</span>
+    <span>Physics</span>
+  </div>
+
+  <div class="hero" style="padding-top:1.5rem;">
+    <div class="hero-eyebrow">Edexcel IAL Physics</div>
+    <h1 style="color:var(--phys-accent)">Physics</h1>
+    <p class="hero-sub">Select a year group, then choose a topic to start practising.</p>
+  </div>
+
+  <!-- Year tabs -->
+  <div class="unit-tabs">
+    <button class="unit-tab active-phys" onclick="showUnit('ias', this)">IAS (Year 1)</button>
+    <button class="unit-tab locked" title="Coming soon" onclick="return false;">IAL2 (Year 2) — Coming Soon 🔒</button>
+  </div>
+
+  <!-- IAS Topics -->
+  <div id="unit-ias">
+    <div class="section-header">
+      <h2>IAS Topics</h2>
+      <span>7 topics</span>
+    </div>
+
+    <div class="topics-grid">
+      <a class="topic-card phys-topic" href="topics/motion.html">
+        <div class="topic-left">
+          <span class="topic-num">1</span>
+          <span class="topic-name">Motion</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/forces.html">
+        <div class="topic-left">
+          <span class="topic-num">2</span>
+          <span class="topic-name">Forces</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/fluids.html">
+        <div class="topic-left">
+          <span class="topic-num">3</span>
+          <span class="topic-name">Fluids</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/materials.html">
+        <div class="topic-left">
+          <span class="topic-num">4</span>
+          <span class="topic-name">Materials</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/waves.html">
+        <div class="topic-left">
+          <span class="topic-num">5</span>
+          <span class="topic-name">Waves</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/quantum-physics.html">
+        <div class="topic-left">
+          <span class="topic-num">6</span>
+          <span class="topic-name">Quantum Physics</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+      <a class="topic-card phys-topic" href="topics/electric-circuits.html">
+        <div class="topic-left">
+          <span class="topic-num">7</span>
+          <span class="topic-name">Electric Circuits</span>
+        </div>
+        <span class="topic-arrow">›</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- IAL2 coming soon -->
+  <div id="unit-ial2" style="display:none;">
+    <div class="coming-soon-banner">
+      <h3>IAL2 (Year 2) — Coming Soon</h3>
+      <p>Year 2 topics are being prepared. Check back soon!</p>
+    </div>
+  </div>
+
+  <!-- Feedback -->
+  <div id="feedback" class="feedback-section">
+    <h3>Send feedback</h3>
+    <p>Found an error in a question or solution? Let us know.</p>
+    <div class="star-row">
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button><button class="star">★</button>
+      <button class="star">★</button>
+    </div>
+    <form class="feedback-form" id="feedback-form">
+      <select class="feedback-select" id="fb-subject">
+        <option value="chemistry">Chemistry</option>
+        <option value="physics" selected>Physics</option>
+        <option value="general">General / Site</option>
+      </select>
+      <textarea class="feedback-textarea" id="fb-message" placeholder="Your message..."></textarea>
+      <button type="submit" class="feedback-submit">Send feedback</button>
+    </form>
+    <div class="feedback-thanks" id="feedback-thanks">Thanks! Your feedback has been received. 🙏</div>
+  </div>
+
+</div>
+
+<footer>
+  <span>ReviseIAL &mdash; Free Edexcel IAL revision resources</span> &nbsp;·&nbsp;
+  <a href="../../index.html#feedback">Feedback</a>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script>
+function showUnit(id, btn) {
+  document.querySelectorAll('.unit-tab').forEach(t => t.classList.remove('active-phys'));
+  btn.classList.add('active-phys');
+  document.getElementById('unit-ias').style.display = id === 'ias' ? '' : 'none';
+  document.getElementById('unit-ial2').style.display = id === 'ial2' ? '' : 'none';
+}
+</script>
+</body>
+</html>

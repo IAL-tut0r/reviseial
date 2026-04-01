@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReviseIAL — Edexcel A Level Past Paper Questions</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script>
+    (function(){ const t=localStorage.getItem('rial-theme')||'dark'; document.documentElement.setAttribute('data-theme',t); })();
+  </script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Revise<span class="dot-chem">I</span><span class="dot-phys">AL</span></a>
+  <div class="nav-right">
+    <a class="nav-link" href="pages/chemistry/ias.html">Chemistry</a>
+    <a class="nav-link" href="pages/physics/ias.html">Physics</a>
+    <a class="nav-link" href="#feedback">Feedback</a>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">☀️</button>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-eyebrow">Edexcel International A Level</div>
+    <h1>Past paper questions,<br><em>organised by topic.</em></h1>
+    <p class="hero-sub">Targeted practice for Edexcel IAL Chemistry and Physics. Browse by topic, filter by difficulty, and check worked solutions.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" style="color:var(--chem-accent)">2</span>
+        <span class="stat-label">Subjects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">17</span>
+        <span class="stat-label">IAS Topics</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" style="color:var(--phys-accent)">Free</span>
+        <span class="stat-label">Always</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subjects -->
+  <div class="section-header">
+    <h2>Choose a subject</h2>
+  </div>
+
+  <div class="subjects-grid">
+
+    <!-- Chemistry -->
+    <a class="subject-card chem" href="pages/chemistry/ias.html">
+      <div class="subject-icon">⚗️</div>
+      <h2>Chemistry</h2>
+      <p>Edexcel International A Level Chemistry — topical questions with worked solutions.</p>
+      <div class="subject-meta">
+        <span class="badge badge-chem">IAS — Active</span>
+        <span class="badge badge-soon">IAL — Coming Soon</span>
+      </div>
+    </a>
+
+    <!-- Physics -->
+    <a class="subject-card phys" href="pages/physics/ias.html">
+      <div class="subject-icon">⚛️</div>
+      <h2>Physics</h2>
+      <p>Edexcel International A Level Physics — topical questions with worked solutions.</p>
+      <div class="subject-meta">
+        <span class="badge badge-phys">IAS — Active</span>
+        <span class="badge badge-soon">IAL — Coming Soon</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- How it works -->
+  <div class="section-header" style="margin-top:2rem;">
+    <h2>How to use ReviseIAL</h2>
+  </div>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap:14px; margin-bottom:3rem;">
+    <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:1.2rem;">
+      <div style="font-size:1.4rem; margin-bottom:.8rem;">📚</div>
+      <div style="font-size:13px; font-weight:500; margin-bottom:.3rem;">Pick a topic</div>
+      <div style="font-size:12px; color:var(--text-muted); font-weight:300;">Browse all IAS topics for Chemistry or Physics and jump straight to what you're revising.</div>
+    </div>
+    <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:1.2rem;">
+      <div style="font-size:1.4rem; margin-bottom:.8rem;">🎯</div>
+      <div style="font-size:13px; font-weight:500; margin-bottom:.3rem;">Filter by difficulty</div>
+      <div style="font-size:12px; color:var(--text-muted); font-weight:300;">Each question is tagged Easy, Medium or Hard. Warm up or go straight to the challenge.</div>
+    </div>
+    <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:1.2rem;">
+      <div style="font-size:1.4rem; margin-bottom:.8rem;">💡</div>
+      <div style="font-size:13px; font-weight:500; margin-bottom:.3rem;">Check solutions</div>
+      <div style="font-size:12px; color:var(--text-muted); font-weight:300;">Worked solutions explain the method, not just the answer — so you actually understand.</div>
+    </div>
+    <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:1.2rem;">
+      <div style="font-size:1.4rem; margin-bottom:.8rem;">✅</div>
+      <div style="font-size:13px; font-weight:500; margin-bottom:.3rem;">Track progress</div>
+      <div style="font-size:12px; color:var(--text-muted); font-weight:300;">Tick off questions as you complete them. Your progress is saved in your browser.</div>
+    </div>
+  </div>
+
+  <!-- Feedback -->
+  <div id="feedback" class="feedback-section">
+    <h3>Send feedback</h3>
+    <p>Found an error? Have a suggestion? We'd love to hear from you.</p>
+    <div class="star-row">
+      <button class="star" title="1 star">★</button>
+      <button class="star" title="2 stars">★</button>
+      <button class="star" title="3 stars">★</button>
+      <button class="star" title="4 stars">★</button>
+      <button class="star" title="5 stars">★</button>
+    </div>
+    <form class="feedback-form" id="feedback-form">
+      <select class="feedback-select" id="fb-subject">
+        <option value="">Select a subject</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="physics">Physics</option>
+        <option value="general">General / Site</option>
+      </select>
+      <textarea class="feedback-textarea" id="fb-message" placeholder="Your message..."></textarea>
+      <button type="submit" class="feedback-submit">Send feedback</button>
+    </form>
+    <div class="feedback-thanks" id="feedback-thanks">Thanks! Your feedback has been received. 🙏</div>
+  </div>
+
+</div>
+
+<footer>
+  <span>ReviseIAL &mdash; Free Edexcel IAL revision resources</span> &nbsp;·&nbsp;
+  <a href="#feedback">Feedback</a>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
