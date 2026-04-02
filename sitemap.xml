@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://ial-tut0r.github.io/reviseial/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/ias.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://ial-tut0r.github.io/reviseial/pages/physics/ias.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://ial-tut0r.github.io/reviseial/pages/about.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Chemistry IAS Topics -->
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/stoichiometry.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/atomic-structure.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/bonding.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/intro-organic.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/alkenes.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/energetics.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/intermolecular-forces.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/redox.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/kinetics.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/chemistry/topics/further-organic.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+
+  <!-- Physics IAS Topics -->
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/motion.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/forces.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/fluids.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/materials.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/waves.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/quantum-physics.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://ial-tut0r.github.io/reviseial/pages/physics/topics/electric-circuits.html</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+
+</urlset>
