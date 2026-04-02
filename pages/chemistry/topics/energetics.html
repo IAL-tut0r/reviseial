@@ -43,19 +43,10 @@
   <div class="hero" style="padding-top:1.5rem;">
     <div class="hero-eyebrow">Edexcel IAL Chemistry — IAS</div>
     <h1 style="color:var(--chem-accent)">Energetics</h1>
-    <p class="hero-sub">Practise past paper questions on Energetics. View the PDF, tick questions as you complete them, and reveal worked solutions when ready.</p>
-  </div>
-
-  <div class="progress-label" id="progress-label">0 of 0 questions completed</div>
-  <div class="progress-bar-wrap">
-    <div class="progress-bar-fill " id="progress-fill" style="width:0%"></div>
+    <p class="hero-sub">Past paper questions and worked solutions for Energetics. Use the tabs below to switch between questions and solutions.</p>
   </div>
 
   <div class="pdf-section">
-    <div class="section-header">
-      <h2>Past Paper Questions</h2>
-      <span>Select questions or solutions</span>
-    </div>
     <div class="pdf-tabs">
       <button class="pdf-tab active-chem" onclick="showPdf('questions', this)">📄 Questions</button>
       <button class="pdf-tab" onclick="showPdf('solutions', this)">✅ Worked Solutions</button>
@@ -74,95 +65,9 @@
     </div>
   </div>
 
-  <div class="section-header">
-    <h2>Questions</h2>
-    <span>Tick each one as you complete it</span>
-  </div>
-
-  <div class="question-filters">
-    <span class="filter-label">Difficulty:</span>
-    <button class="filter-btn active" data-diff="all">All</button>
-    <button class="filter-btn easy" data-diff="easy">Easy</button>
-    <button class="filter-btn medium" data-diff="medium">Medium</button>
-    <button class="filter-btn hard" data-diff="hard">Hard</button>
-  </div>
-
-  <!-- ✏️ REPLACE PLACEHOLDER QUESTIONS BELOW WITH YOUR OWN -->
-
-  <div class="question-card" data-diff="easy">
-    <div class="question-header">
-      <button class="q-check" data-qid="q1"></button>
-      <div class="q-meta">
-        <span class="q-num">Q1</span>
-        <span class="diff-pill diff-easy">Easy</span>
-        <span class="q-marks">2 marks</span>
-      </div>
-    </div>
-    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
-      <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace with your question text. You can reference the PDF above (e.g. "See Q1 in the PDF above").</em>
-      </p>
-      <div class="q-actions">
-        <button class="q-btn" data-action="solution">Show solution</button>
-      </div>
-    </div>
-    <div class="solution-panel">
-      <strong>Worked Solution</strong><br><br>
-      ✏️ <em>Add your worked solution here.</em>
-    </div>
-  </div>
-
-  <div class="question-card" data-diff="medium">
-    <div class="question-header">
-      <button class="q-check" data-qid="q2"></button>
-      <div class="q-meta">
-        <span class="q-num">Q2</span>
-        <span class="diff-pill diff-medium">Medium</span>
-        <span class="q-marks">4 marks</span>
-      </div>
-    </div>
-    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
-      <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace with your second question.</em>
-      </p>
-      <div class="q-actions">
-        <button class="q-btn" data-action="solution">Show solution</button>
-      </div>
-    </div>
-    <div class="solution-panel">
-      <strong>Worked Solution</strong><br><br>
-      ✏️ <em>Step 1: ...<br>Step 2: ...<br>Answer: ...</em>
-    </div>
-  </div>
-
-  <div class="question-card" data-diff="hard">
-    <div class="question-header">
-      <button class="q-check" data-qid="q3"></button>
-      <div class="q-meta">
-        <span class="q-num">Q3</span>
-        <span class="diff-pill diff-hard">Hard</span>
-        <span class="q-marks">6 marks</span>
-      </div>
-    </div>
-    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
-      <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace with a harder question.</em>
-      </p>
-      <div class="q-actions">
-        <button class="q-btn" data-action="solution">Show solution</button>
-      </div>
-    </div>
-    <div class="solution-panel">
-      <strong>Worked Solution</strong><br><br>
-      ✏️ <em>Full explanation here.</em>
-    </div>
-  </div>
-
-  <!-- ✏️ COPY A BLOCK ABOVE TO ADD MORE QUESTIONS -->
-
-  <div id="feedback" class="feedback-section" style="margin-top:2.5rem;">
+  <div id="feedback" class="feedback-section">
     <h3>Send feedback</h3>
-    <p>Found an error? Let us know.</p>
+    <p>Found an error? Have a suggestion? Let us know.</p>
     <div class="star-row">
       <button class="star">★</button><button class="star">★</button>
       <button class="star">★</button><button class="star">★</button>
