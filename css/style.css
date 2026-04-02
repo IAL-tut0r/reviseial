@@ -509,6 +509,74 @@ nav {
   margin-top: 8px;
 }
 
+/* ── PDF Section ── */
+.pdf-section {
+  margin-bottom: 2.5rem;
+}
+.pdf-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.pdf-tab {
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pdf-tab:hover { background: var(--bg-hover); color: var(--text-primary); }
+.pdf-tab.active-chem { background: var(--chem-dim); color: var(--chem-accent); border-color: transparent; }
+.pdf-tab.active-phys { background: var(--phys-dim); color: var(--phys-accent); border-color: transparent; }
+.pdf-panel { display: none; }
+.pdf-panel.open { display: block; }
+.pdf-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-bottom: none;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pdf-toolbar-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.pdf-embed-wrap {
+  border: 1px solid var(--border);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+.pdf-embed {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+}
+.pdf-coming-soon {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+}
+.pdf-coming-soon span:first-child { font-size: 1.5rem; }
+
 /* ── Footer ── */
 footer {
   border-top: 1px solid var(--border);

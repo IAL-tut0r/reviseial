@@ -22,8 +22,8 @@
 <nav>
   <a class="nav-logo" href="../../../index.html">Revise<span class="dot-chem">I</span><span class="dot-phys">AL</span></a>
   <div class="nav-right">
-    <a class="nav-link" href="../../../pages/chemistry/ias.html">Chemistry</a>
-    <a class="nav-link  active" href="../../../pages/physics/ias.html">Physics</a>
+    <a class="nav-link " href="../../../pages/chemistry/ias.html">Chemistry</a>
+    <a class="nav-link active" href="../../../pages/physics/ias.html">Physics</a>
     <a class="nav-link" href="../../../pages/about.html">About</a>
     <a class="nav-link" href="../../../index.html#feedback">Feedback</a>
     <button class="theme-toggle" id="theme-toggle" title="Toggle theme">☀️</button>
@@ -43,24 +43,45 @@
   <div class="hero" style="padding-top:1.5rem;">
     <div class="hero-eyebrow">Edexcel IAL Physics — IAS</div>
     <h1 style="color:var(--phys-accent)">Motion</h1>
-    <p class="hero-sub">Practise past paper questions on Motion. Tick each question when you're done to track your progress.</p>
+    <p class="hero-sub">Practise past paper questions on Motion. View the PDF, tick questions as you complete them, and reveal worked solutions when ready.</p>
   </div>
 
-  <!-- Progress -->
   <div class="progress-label" id="progress-label">0 of 0 questions completed</div>
   <div class="progress-bar-wrap">
-    <div class="progress-bar-fill  phys" id="progress-fill" style="width:0%"></div>
+    <div class="progress-bar-fill phys" id="progress-fill" style="width:0%"></div>
   </div>
 
-  <!-- PDF Download -->
-  <div style="margin-bottom:2rem;">
-    <a class="download-btn" href="#">
-      ⬇ Download all Motion questions (PDF)
-    </a>
-    <span style="font-size:12px; color:var(--text-muted); margin-left:12px;">Replace # with your PDF file path</span>
+  <div class="pdf-section">
+    <div class="section-header">
+      <h2>Past Paper Questions</h2>
+      <span>Select questions or solutions</span>
+    </div>
+    <div class="pdf-tabs">
+      <button class="pdf-tab active-phys" onclick="showPdf('questions', this)">📄 Questions</button>
+      <button class="pdf-tab" onclick="showPdf('solutions', this)">✅ Worked Solutions</button>
+    </div>
+    <div class="pdf-panel open" id="pdf-questions">
+      <div class="pdf-toolbar">
+        <span class="pdf-toolbar-title">📄 Questions PDF</span>
+        <a class="download-btn" href="../../../pdfs/physics/motion-questions.pdf" download style="font-size:12px; padding:6px 14px;">⬇ Download</a>
+      </div>
+      <div class="pdf-embed-wrap">
+        <iframe class="pdf-embed" src="../../../pdfs/physics/motion-questions.pdf"></iframe>
+      </div>
+    </div>
+    <div class="pdf-panel" id="pdf-solutions">
+      <div class="pdf-coming-soon">
+        <span>✅</span>
+        <span>Worked solutions coming soon</span>
+      </div>
+    </div>
   </div>
 
-  <!-- Filters -->
+  <div class="section-header">
+    <h2>Questions</h2>
+    <span>Tick each one as you complete it</span>
+  </div>
+
   <div class="question-filters">
     <span class="filter-label">Difficulty:</span>
     <button class="filter-btn active" data-diff="all">All</button>
@@ -69,8 +90,7 @@
     <button class="filter-btn hard" data-diff="hard">Hard</button>
   </div>
 
-  <!-- Questions -->
-  <!-- ✏️ ADD YOUR QUESTIONS BELOW — copy a question-card block to add more -->
+  <!-- ✏️ REPLACE PLACEHOLDER QUESTIONS BELOW WITH YOUR OWN -->
 
   <div class="question-card" data-diff="easy">
     <div class="question-header">
@@ -81,9 +101,9 @@
         <span class="q-marks">2 marks</span>
       </div>
     </div>
-    <div style="padding: 0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
+    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
       <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace this with your question text for Motion. You can use plain text or paste from a past paper.</em>
+        ✏️ <em>Replace with your question text. You can reference the PDF above (e.g. "See Q1 in the PDF above").</em>
       </p>
       <div class="q-actions">
         <button class="q-btn" data-action="solution">Show solution</button>
@@ -91,7 +111,7 @@
     </div>
     <div class="solution-panel">
       <strong>Worked Solution</strong><br><br>
-      ✏️ <em>Add your worked solution here. Explain each step clearly so students understand the method.</em>
+      ✏️ <em>Add your worked solution here.</em>
     </div>
   </div>
 
@@ -104,9 +124,9 @@
         <span class="q-marks">4 marks</span>
       </div>
     </div>
-    <div style="padding: 0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
+    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
       <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace this with your second question. Medium difficulty questions usually involve a calculation or multi-step reasoning.</em>
+        ✏️ <em>Replace with your second question.</em>
       </p>
       <div class="q-actions">
         <button class="q-btn" data-action="solution">Show solution</button>
@@ -127,9 +147,9 @@
         <span class="q-marks">6 marks</span>
       </div>
     </div>
-    <div style="padding: 0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
+    <div style="padding:0 1.2rem 1rem; display:flex; align-items:flex-start; justify-content:space-between; gap:1rem;">
       <p class="q-text" style="font-size:14px; color:var(--text-secondary); font-weight:300; line-height:1.6;">
-        ✏️ <em>Replace this with a harder question. Hard questions often involve extended writing, data analysis, or multi-concept reasoning.</em>
+        ✏️ <em>Replace with a harder question.</em>
       </p>
       <div class="q-actions">
         <button class="q-btn" data-action="solution">Show solution</button>
@@ -137,18 +157,15 @@
     </div>
     <div class="solution-panel">
       <strong>Worked Solution</strong><br><br>
-      ✏️ <em>Full explanation here. For hard questions, break it into clearly numbered steps.</em>
+      ✏️ <em>Full explanation here.</em>
     </div>
   </div>
 
-  <!-- ✏️ COPY THE BLOCK ABOVE TO ADD MORE QUESTIONS -->
-  <!-- Change data-diff to "easy", "medium", or "hard" -->
-  <!-- Change data-qid to a unique value like "q4", "q5", etc. -->
+  <!-- ✏️ COPY A BLOCK ABOVE TO ADD MORE QUESTIONS -->
 
-  <!-- Feedback -->
   <div id="feedback" class="feedback-section" style="margin-top:2.5rem;">
     <h3>Send feedback</h3>
-    <p>Found an error in a question or solution? Let us know.</p>
+    <p>Found an error? Let us know.</p>
     <div class="star-row">
       <button class="star">★</button><button class="star">★</button>
       <button class="star">★</button><button class="star">★</button>
@@ -156,8 +173,8 @@
     </div>
     <form class="feedback-form" id="feedback-form">
       <select class="feedback-select" id="fb-subject">
-        <option value="chemistry">Chemistry — Motion</option>
-        <option value="physics"  selected>Physics — Motion</option>
+        <option value="chemistry" >Chemistry — Motion</option>
+        <option value="physics" selected>Physics — Motion</option>
         <option value="general">General / Site</option>
       </select>
       <textarea class="feedback-textarea" id="fb-message" placeholder="Your message..."></textarea>
@@ -174,5 +191,14 @@
 </footer>
 
 <script src="../../../js/main.js"></script>
+<script>
+function showPdf(id, btn) {
+  const activeClass = 'active-phys';
+  document.querySelectorAll('.pdf-tab').forEach(t => t.classList.remove(activeClass));
+  btn.classList.add(activeClass);
+  document.querySelectorAll('.pdf-panel').forEach(p => p.classList.remove('open'));
+  document.getElementById('pdf-' + id).classList.add('open');
+}
+</script>
 </body>
 </html>
